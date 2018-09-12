@@ -23,11 +23,6 @@ namespace OOP_RPG
         
         public void AddMonster(string name, int strength, int defense, int hp) {
             var monster = new Monster(name, strength, defense, hp);
-            
-            monster.Strength = strength;
-            monster.Defense = defense;
-            monster.OriginalHP = hp;
-            monster.CurrentHP = hp;
             this.Monsters.Add(monster);
         }   
         
