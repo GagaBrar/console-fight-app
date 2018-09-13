@@ -1,7 +1,7 @@
 using System;
 namespace OOP_RPG
 {
-    public class Armor
+    public class Armor : ItemI
     {
         public Armor(string name, int defense) {
             this.Name = name;
@@ -10,5 +10,7 @@ namespace OOP_RPG
         
         public string Name { get; set; }
         public int Defense { get; set; }
+        public int OriginalValue { get; set; }
+        public int ResellValue { get; set; }
     }
 }

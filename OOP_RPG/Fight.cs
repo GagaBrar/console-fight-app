@@ -9,7 +9,8 @@ namespace OOP_RPG
         List<Monster> Monsters { get; set; }
         public Game game { get; set; }
         public Hero hero { get; set; }
-        
+        public Monster monster { get; set; }
+
         public Fight(Hero hero, Game game) {
             this.Monsters = new List<Monster>();
             this.hero = hero;
@@ -17,8 +18,7 @@ namespace OOP_RPG
             this.AddMonster("Squid", 9, 8, 20);
             this.AddMonster("Gorilla", 7, 8, 25);
             this.AddMonster("Big show", 9, 9, 50);
-            this.AddMonster("Cathy", 8, 9, 60);
-               
+            this.AddMonster("Cathy", 8, 9, 60);              
         }
         
         public void AddMonster(string name, int strength, int defense, int hp) {
@@ -93,6 +93,8 @@ namespace OOP_RPG
         
         public void Win(Monster monster) {
             var enemy = monster;
+            hero.Gold = hero.Gold + monster.Gold;
+
             Console.WriteLine(enemy.Name + " has been defeated! You win the battle!");
             game.Main();
         }
