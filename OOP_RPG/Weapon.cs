@@ -11,6 +11,7 @@ namespace OOP_RPG
             this.ResellValue = resellvalue;
         }
         
+
         public string Name { get; set; }
         public int Strength { get; set; }
         public int OriginalValue { get; set; }

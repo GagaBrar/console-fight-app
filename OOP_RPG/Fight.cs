@@ -35,9 +35,19 @@ namespace OOP_RPG
             Console.WriteLine("You've encountered a " + enemy.Name + "! " + enemy.Strength + " Strength/" + enemy.Defense + " Defense/" + 
             enemy.CurrentHP + " HP. What will you do?");
             Console.WriteLine("1. Fight");
+            Console.WriteLine("2. RunAway");
+            Console.WriteLine("3. GetHealed");
             var input = Console.ReadLine();
             if (input == "1") {
                 this.HeroTurn(enemy);
+            }
+            else if (input == "2")
+            {
+                this.RunAway();
+            else if (input == "3")
+                {
+                    this.GetHealed();
+                }
             }
             else { 
                 this.game.Main();
@@ -90,7 +100,13 @@ namespace OOP_RPG
                this.Start();
            }
         }
-        
+        public void RunAway()
+        {
+        }
+
+        public void GetHealed()
+        {
+        }
         public void Win(Monster monster) {
             var enemy = monster;
             hero.Gold = hero.Gold + monster.Gold;
