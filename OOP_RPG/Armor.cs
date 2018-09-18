@@ -3,11 +3,14 @@ namespace OOP_RPG
 {
     public class Armor : ItemI
     {
-        public Armor(string name, int defense) {
+        public Armor(string name, int defense, int OriginaVlaue, int ResellValue)
+        {
             this.Name = name;
             this.Defense = defense;
+            this.OriginalValue = OriginalValue;
+            this.ResellValue = ResellValue;
         }
-        
+
         public string Name { get; set; }
         public int Defense { get; set; }
         public int OriginalValue { get; set; }

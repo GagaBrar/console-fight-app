@@ -10,7 +10,7 @@ namespace OOP_RPG
             this.OriginalValue = originalvalue;
             this.ResellValue = resellvalue;
         }
-        
+
 
         public string Name { get; set; }
         public int Strength { get; set; }

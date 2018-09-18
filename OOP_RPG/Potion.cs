@@ -12,17 +12,15 @@ namespace OOP_RPG
         {
             this.HP = hp;
             this.Name = name;
-            this.OrigionalValue = originalvalue;
+            this.OriginalValue = originalvalue;
             this.ResellValue = resellvalue;
 
         }
 
         public int HP { get; set; }
         public string Name { get; set; }
-        public int OrigionalValue { get; set; }
+
         public int ResellValue { get; set; }
-
-
+        public int OriginalValue { get; set; }
     }
-}
 }

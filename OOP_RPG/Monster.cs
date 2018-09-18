@@ -22,7 +22,7 @@ namespace OOP_RPG
             this.OriginalHP = hp;
             this.CurrentHP = hp;
             this.Gold = 5;
-            this.Speed = speed;
+            this.Speed = 3;
         }
     }
 }
